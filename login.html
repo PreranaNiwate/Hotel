@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log-In</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <h2>EasySet24</h2>
+        </a>
+        <ul class="links">
+          <li><a href="">location</a></li>
+          <li><a href="">help</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <!--
+    <div class="form-popup">
+      <div class="form-box">
+        <div class="form-details">
+          <img src="img.jpg" />
+        </div>
+        <div class="form-content">
+          <h4>Login</h4>
+          <p>Login to access your Easyset24 account</p>
+          <form action="#" class="form">
+            <div class="input-field">
+              <label>Email</label>
+              <input type="text" placeholder="Email" required />
+            </div>
+            <div class="input-field">
+              <label>Password</label>
+              <input type="password" placeholder="Password" required />
+            </div>
+            <input type="checkbox" /> Remember Me
+            <a href="#" class="forgot-pass">Forgot Password?</a>
+            <button type="submit">Log In</button>
+          </form>
+          <div class="bottom-link">
+            Don't have an account?
+            <a href="#">Signup</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <section>
+      <div class="container">
+        <div class="img-box">
+          <img src="img.jpg" alt="" />
+        </div>
+        <div class="content-box">
+          <div class="form-box">
+            <h2>Login</h2>
+            <p>Login to access your EasySet24 account</p>
+            <form id="loginForm" onsubmit="return validateLoginForm()">
+              <div class="input-box">
+                <span>Email</span>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="input-box">
+                <span>Password</span>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="sub-box">
+                <label
+                  ><input type="checkbox" name="remember" /> Remember</label
+                >
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="input-box">
+                <input type="submit" name="login" value="Log In" />
+              </div>
+              <div class="error-message" id="loginErrorMsg"></div>
+              <h5>Or</h5>
+              <ul class="sci">
+                <li><img src="images\facebook.png" alt="facebook" /></li>
+                <li><img src="images\apple.png" alt="Apple" /></li>
+                <li><img src="images\google.jpg" alt="Google" /></li>
+              </ul>
+              <div class="input-box">
+                <p>
+                  Don't have an account in EasySet24 yet?
+                  <a href="signup.html">Sign Up</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="login.js" defer></script>
+  </body>
+</html>
