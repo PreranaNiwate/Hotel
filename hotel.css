@@ -7,7 +7,7 @@
 }
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
@@ -140,7 +140,7 @@ body {
   position: absolute;
   top: 0;
   width: 60%;
-  margin-top: 55%;
+  margin-top: 50%;
   margin-left: 30%;
   font-weight: lighter;
   font-size: 40px;
@@ -167,8 +167,41 @@ body {
   font-size: 40px;
   color: #fff;
 }
+.search-btn {
+  position: absolute;
+  top: 0;
+  margin-top: 56.8%;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: 14%;
+}
 
-.content a {
+.btnsearch {
+  text-decoration: none;
+  width: 15%;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.btnsearch:hover {
+  text-decoration: none;
+  width: 15%;
+  text-align: center;
+  /* padding-bottom: 20px; */
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.content .btn-exploremore {
   text-decoration: none;
   cursor: pointer;
   position: absolute;
@@ -187,6 +220,7 @@ body {
 .content-container .content .text-head {
   color: black;
 }
+
 .discover img {
   /* margin-top: 30px; */
   max-width: 100%;
